@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "sourceMap": false,
+    "types": ["node", "jest"],
+    "strict": false,
+    "esModuleInterop": true
+  },
+  "include": ["./src/*", "./node_modules/*", "./**/*.json"],
+  "exclude": ["tsconfig.json", "tsconfig-build.json"]
+}
